@@ -23,8 +23,8 @@ Each problem can be solved with an appropriate planner:
   2. Download the ENHSP-2020 JAR file from https://drive.google.com/file/d/1GfVLQNEgeeNnNeI6HkrCtAUrrSzdSW8g/view?usp=sharing (tested version: JAR file with SHA-256 checksum `5b9c62acba31bd01e4e80214f9c7e5e004938c16d0f16eb999092de2403d9488`).
   3. Run `java -jar /path/to/enhsp-20.jar -o pddl/numeric/domain.pddl -f pddl/numeric/problem.pddl -planner opt-blind`.
      - NOTE: It is important to select a configuration (a value for the `-planner` option) that guarantees optimality in order to obtain the best plan according to the metric.
-- `temporal` can be solved with [LPG-td](https://lpg.unibs.it/lpg/lpgtd-1_4-linux.tar.gz) (**Linux only**):
-  1. Download the LPG-td compressed archive (tested version: .tar.gz file with SHA-256 checksum `0c5792a9af205e6c720f75218d5fffcf75be712f02a80d2469e88c2155c7dfbb`) and extract the `lpg-td` binary.
+- `temporal` can be solved with [LPG-td](https://lpg.unibs.it/lpg/) (**Linux only**):
+  1. Download the LPG-td compressed archive from https://lpg.unibs.it/lpg/lpgtd-1_4-linux.tar.gz (tested version: .tar.gz file with SHA-256 checksum `0c5792a9af205e6c720f75218d5fffcf75be712f02a80d2469e88c2155c7dfbb`) and extract the `lpg-td` binary.
   2. Run `/path/to/lpg-td -o pddl/temporal/domain.pddl -f pddl/temporal/problem.pddl -quality`.
 
 ENHSP can solve `simple` too. LPG-td can solve `simple` and `numeric` too.
